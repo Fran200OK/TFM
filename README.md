@@ -1,6 +1,6 @@
 # Caracterización de perfiles de tráfico en redes corporativas mediante Wavelets e Inteligencia Artificial
 
-Este repositorio contiene el código fuente y la metodología experimental desarrollada para el Trabajo Fin de Máster en Ingeniería de Telecomunicación por la Universidad Autónoma de Madrid (UAM). 
+Este repositorio contiene el código fuente y la metodología experimental desarrollada para el Trabajo Fin de Máster en Ingeniería de Telecomunicación (UAM). 
 
 El proyecto propone una arquitectura de monitorización agnóstica al *payload* para redes corporativas. Ante la ceguera analítica provocada por la adopción masiva del cifrado de extremo a extremo (TLS 1.3, QUIC), este sistema emplea el Análisis Multirresolución (*Wavelets*) y el Aprendizaje Automático (*Machine Learning*) para extraer la huella espectral de los nodos y clasificar su comportamiento (Usuarios vs. Servidores) analizando únicamente la morfología volumétrica de sus conexiones.
 
