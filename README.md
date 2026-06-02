@@ -34,3 +34,29 @@ El proyecto está desarrollado en **Python 3.8+**. Las librerías principales re
 
 ```bash
 pip install pandas numpy scipy pywavelets scikit-learn matplotlib seaborn tqdm
+
+
+1.  **Configura tu entorno local:**
+    Abre el archivo `01_Preprocesamiento_TFM.ipynb`. Busca las etiquetas marcadas como `[CONFIGURACIÓN DE USUARIO]`. Deberás actualizar:
+    *   La ruta (`BASE_DIR`) hacia tus archivos `.csv` en bruto.
+    *   El diccionario `RANGOS_ETIQUETAS` con los bloques CIDR correspondientes a las VLANs de tu red (ej. IPs de la red WiFi, IPs de los servidores de BBDD, etc.).
+
+2.  **Ejecuta el pipeline secuencialmente:**
+    *   Ejecuta el cuaderno `01` para generar la carpeta de `normalizacion/`.
+    *   Ejecuta el cuaderno `02` para extraer las variables a la carpeta `caracteristicas/`.
+    *   (Opcional) Ejecuta el cuaderno `03` si deseas visualizar las huellas espectrales en PDF.
+    *   En el cuaderno `04`, actualiza la lista `ETIQUETAS_SERVIDORES` indicando cuáles de las etiquetas definidas en el paso 1 corresponden a la infraestructura crítica. Ejecuta el cuaderno para entrenar la red neuronal y el ensamblado *Random Forest*, y obtener el reporte de métricas finales.
+
+---
+
+##  Resultados Destacados
+
+*   **A largo plazo (Histórico Mensual):** El modelo MLP, apoyado en métricas de Energía con la transformada *Haar*, alcanza precisiones F1-Score superiores al **99.6%**.
+*   **A corto plazo (Ventanas de 1 hora):** El ensamblado *Random Forest*, apoyado en la transformada *Mexican Hat*, demuestra ser altamente resiliente al ruido y escasez de datos, alcanzando un F1-Score operativo del **87.3%** garantizando tiempos de respuesta viables para integración en un SOC.
+
+---
+
+##  Autor
+
+*   **Francisco Orcha Kovacs** 
+*   Universidad Autónoma de Madrid (UAM)
