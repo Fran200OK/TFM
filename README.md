@@ -14,7 +14,7 @@ El código está diseñado como un *pipeline* secuencial de datos, dividido en c
     Filtra los datos crudos mediante rangos CIDR configurables, agrupa los *bytes* en ventanas temporales equidistantes (ej. 5 minutos), imputa los periodos de inactividad técnica (*zero-padding*) y aplica una estandarización independiente por IP (*Z-Score*) para lograr la invarianza de escala.
 
 * **`02_Extraccion_Wavelet.ipynb`**: 
-    Aplica el motor matemático del proyecto. Realiza la descomposición espectral de las series de tiempo estandarizadas utilizando tanto la Transformada Wavelet Discreta (DWT: *Haar*, *Db2*) como la Continua (CWT: *Mexican Hat*), extrayendo vectores de Energía y Entropía de Shannon.
+    Realiza la descomposición espectral de las series de tiempo estandarizadas utilizando tanto la Transformada Wavelet Discreta (DWT: *Haar*, *Db2*) como la Continua (CWT: *Mexican Hat*), extrayendo vectores de Energía y Entropía de Shannon.
 
 * **`03_Visualización_Wavelets.ipynb`**: 
     Herramienta de análisis exploratorio que genera representaciones gráficas en PDF de los coeficientes de aproximación, detalle y escalas continuas, permitiendo auditar la morfología de la señal antes de alimentar a la Inteligencia Artificial.
