@@ -32,11 +32,8 @@ El código está diseñado como un *pipeline* secuencial de datos, dividido en c
 
 El proyecto está desarrollado en **Python 3.8+**. Las librerías principales requeridas para ejecutar la arquitectura son:
 
-```bash
 pip install pandas numpy scipy pywavelets scikit-learn matplotlib seaborn tqdm
 
-*   **A largo plazo (Histórico Mensual):** El modelo MLP, apoyado en métricas de Energía con la transformada *Haar*, alcanza precisiones F1-Score superiores al **99.6%**.
-*   **A corto plazo (Ventanas de 1 hora):** El ensamblado *Random Forest*, apoyado en la transformada *Mexican Hat*, demuestra ser altamente resiliente al ruido y escasez de datos, alcanzando un F1-Score operativo del **87.3%** garantizando tiempos de respuesta viables para integración en un SOC.
 
 ---
 
